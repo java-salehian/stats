@@ -1,0 +1,33 @@
+•  https://www.bing.com/search?form=SKPBOT&q=README.md: Provide instructions on how to set up and run your application.
+
+# Metrics Calculation Application
+
+## Setup
+1. Clone the repository
+2. Configure MySQL database in `application.properties`
+3. Run the application using `mvn spring-boot:run`
+
+## Usage
+•  Place your JSON files in the specified directory
+
+•  Access the endpoint using below order:
+###
+POST http://localhost:8080/events/process
+Content-Type: application/json
+
+{
+  "impressions": [
+    "D:\\webmetrics\\files\\impression1.json",
+    "D:\\webmetrics\\files\\impression2.json"
+  ],
+  "clicks": [
+    "D:\\webmetrics\\files\\click1.json",
+    "D:\\webmetrics\\files\\click2.json"
+  ]
+}
+
+###
+GET http://localhost:8080/metrics
+
+###
+GET http://localhost:8080/recommendations
