@@ -25,6 +25,8 @@ Content-Type: application/json
     "D:\\webmetrics\\files\\click2.json"
   ]
 }
+*** Please notice to change te file locations.
+*** please notice that the first line of each file is a comment and is not processed.
 
 ###
 GET http://localhost:8080/metrics
